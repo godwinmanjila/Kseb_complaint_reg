@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LINEMAN</title>
+	<link rel="stylesheet" type="text/css" href="css/admin.css" />
+</head>
+<script>
+	function viewWorkAllocation() {
+		document.getElementById("frame").src = "viewMyAllocations";
+	}
+	function requestMaterial() {
+		document.getElementById("frame").src = "materialRequest";
+	}
+	function viewMaterialRequest() {
+		document.getElementById("frame").src = "viewMyMaterialRequest";
+	}
+	function newPayment() {
+		document.getElementById("frame").src = "newPayment";
+	}
+	function viewPayment() {
+		document.getElementById("frame").src = "viewPayment";
+	}
+</script>
+<body>
+	<nav>
+		<ul>
+			<li class="sub-menu-parent">
+				<button>Work Allocation</button>
+				<ul class="sub-menu">
+					<li><button onclick="viewWorkAllocation()">View Work Allocations</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<button>Material Request</button>
+				<ul class="sub-menu">
+					<li><button onclick="requestMaterial()">New Material Request</button></li>
+					<li><button onclick="viewMaterialRequest()">View Material Request</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<button>Payments</button>
+				<ul class="sub-menu">
+					<li><button onclick="newPayment()">New Payment</button></li>
+					<li><button onclick="viewPayment()">View payments</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<button>Reports</button>
+				<ul class="sub-menu">
+					<li><button onclick="">Complaint Report</button></li>
+					<li><button onclick="">Work Report</button></li>
+					<li><button onclick="">Material Report</button></li>
+					<li><button onclick="">Payment Report</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent"><a href="login.html">
+					<button id="logout">Logout</button>
+			</a></li>
+		</ul>
+	</nav>
+
+	<br>
+	<br>
+	<iframe src="" name="targetframe" allowTransparency="true"
+		scrolling="no" frameborder="0" id="frame"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+h1{
+	color: #fff;
+}
+
+table{
+	color: #fff;
+	width: 100%;
+	border: 2px solid #ff0000;
+	text-align: center;
+	table-layout:auto;
+}
+
+table td{
+	padding-bottom: 10px;
+}
+
+table th{
+	color: #ffff00;
+	font-weight: bold;
+	font-size: 18;
+	padding-bottom: 15px;
+}
+
+.tableop{
+	background: rgba(0,0,0,.3);
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}

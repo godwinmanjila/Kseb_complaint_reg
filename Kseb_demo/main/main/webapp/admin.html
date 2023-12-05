@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADMIN</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css" />
+</head>
+<script>
+		function newComplaint(){
+			document.getElementById("frame").src = "addComplaint.html";
+		}
+		function viewComplaint(){
+			document.getElementById("frame").src = "viewComplaint";
+		}
+		function addWork(){
+			document.getElementById("frame").src = "addWorkAllocation";
+		}
+		function viewWork(){
+			document.getElementById("frame").src = "viewWorkAllocation";
+		}
+</script>
+<body>
+	<nav>
+		<ul>
+			<li class="sub-menu-parent">
+				<button>Complaint</button>
+				<ul class="sub-menu">
+					<li><button onclick="newComplaint()">Add New Complaint</button></li>
+					<li><button onclick="viewComplaint()">View Complaints</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<button>Work Allocation</button>
+				<ul class="sub-menu">
+					<li><button onclick="addWork()">Add Work Allocation</button></li>
+					<li><button onclick="viewWork()">View Work Allocations</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<button>Reports</button>
+				<ul class="sub-menu">
+					<li><button onclick="addWork()">Complaint Report</button></li>
+					<li><button onclick="viewWork()">Work Report</button></li>
+					<li><button onclick="viewWork()">Material Report</button></li>
+					<li><button onclick="viewWork()">Payment Report</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<a href="login.html">
+					<button id="logout">Logout</button>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<br><br><iframe src="" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" id="frame"></iframe>
+
+</body>
+</html>

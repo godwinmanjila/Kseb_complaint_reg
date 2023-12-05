@@ -1,0 +1,38 @@
+<html>
+<title>
+    KSEB/Login/page
+</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="css\login.css">
+</head>
+   
+<body>
+
+    <div class="vasu">
+         <h1><center>Login Page</center></h1>
+        <form method="post" action="login" name="Login id="Login">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="eg.clever@gmail" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="minimum eight char" name="password" required>
+
+        <label for="user_type"><b>UserType</b></label>
+        <br>
+        <select id="user_type" name="user_type">
+
+
+            <option value="null">---Select---Any---- </option>
+            <option value="user">User</option>
+            <option value="line_man">Line Man</option>
+            <option value="executive_engineer">Executive Engineer</option>
+
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+</body>
+
+</html>

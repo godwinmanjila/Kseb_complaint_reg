@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATERIAL DEPO MANAGER</title>
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
+</head>
+<script>
+	function materialRequests() {
+		document.getElementById("frame").src = "materialRequests";
+	}
+	function viewIssuedMaterial() {
+		document.getElementById("frame").src = "viewIssuedMaterial";
+	}
+	function viewPayment() {
+		document.getElementById("frame").src = "viewPaymentsDepo";
+	}
+</script>
+<body>
+	<nav>
+		<ul>
+			<li class="sub-menu-parent">
+				<button>Material Request</button>
+				<ul class="sub-menu">
+					<li><button onclick="materialRequests()">Material Requests</button></li>
+					<li><button onclick="viewIssuedMaterial()">View Issued Material Requests</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<button>Payments</button>
+				<ul class="sub-menu">
+					<li><button onclick="viewPayment()">View payments</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">
+				<button>Reports</button>
+				<ul class="sub-menu">
+					<li><button onclick="">Complaint Report</button></li>
+					<li><button onclick="">Work Report</button></li>
+					<li><button onclick="">Material Report</button></li>
+					<li><button onclick="">Payment Report</button></li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent"><a href="login.html">
+					<button id="logout">Logout</button>
+			</a></li>
+		</ul>
+	</nav>
+
+	<br>
+	<br>
+	<iframe src="" name="targetframe" allowTransparency="true"
+		scrolling="no" frameborder="0" id="frame"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="css/addComplaint.css" />
+</head>
+<body>
+	<div class="add-complaint-box">
+		<h2>Add Complaint</h2>
+		<form method="post" action="addComplaint">
+			<div class="user-box">
+				<input type="date" name="date" required="" id="date"> 
+				<label id="dateLabel">Date</label>
+			</div>
+			<div class="user-box">
+				<input type="text" name="custName" required="" id="custName">
+				<label>Customer Name</label>
+			</div>
+			<div class="user-box">
+				<input type="number" name="phone" required="" id="phone"> 
+				<label>Phone No</label>
+			</div>
+			<div class="user-box">
+				<input type="text" name="location" required="" id="location">
+				<label>Location</label>
+			</div>
+			<div class="user-box">
+				<input type="number" name="postNo" required="" id="postNo">
+				<label>Post No</label>
+			</div>
+			<div class="user-box">
+				<input type="text" name="complaint" required="" id="complaint">
+				<label>Complaint</label>
+			</div>
+
+			<div class="wrapper">
+				<input type="submit" value="ADD COMPLAINT" id="submit" /> 
+				<span></span> <span></span> <span></span> <span></span> <span></span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

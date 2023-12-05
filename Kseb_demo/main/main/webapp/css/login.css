@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("1685689587281.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+.vasu {
+    width: 300px;
+    padding: 16px;
+     margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    
+}
+input[type=text],input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: 2px solid black;
+    background: white;
+    border-radius: 5px;
+    
+    
+    
+    
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #eaedf0;
+    color: #0b0a0a;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+select{
+    width: 100%;
+    padding: 10px;
+    background-color: #eef0f2;
+    color: #191818;
+    border-radius: 5px;
+    cursor: pointer;
+   border: solid 2px;
+}
